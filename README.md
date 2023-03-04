@@ -9,22 +9,6 @@ We use an [Edition Drop](https://portal.thirdweb.com/pre-built-contracts/edition
 - [React SDK](https://docs.thirdweb.com/react): To access the connected wallet, switch the user's network, and claim an NFT from our Edition Drop collection.
 - [Auth](https://portal.thirdweb.com/auth): To ask users to sign a message and verify they own the wallet they claim to be, while on the server-side.
 
-## Using This Template
-
-Create a project using this example:
-
-```bash
-npx thirdweb create --template nft-gated-website
-```
-
-- Create an [Edition Drop](https://thirdweb.com/contracts/new/pre-built/drop/edition-drop) contract using the dashboard.
-- Update the information in the [yourDetails.js](./const/yourDetails.js) file to use your contract address and auth domain name.
-- Add your wallet's private key as an environment variable in a `.env.local` file called `PRIVATE_KEY`:
-
-```text title=".env.local"
-THIRDWEB_AUTH_PRIVATE_KEY=your-wallet-private-key
-```
-
 ## How It Works
 
 Using [Auth](https://portal.thirdweb.com/auth), we can verify a user's identity on the server-side, by asking them to sign a message and verify they own the wallet they claim to be, and validating the signature.
